@@ -1,0 +1,668 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 1440px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.conteiner{
+  width:  1440px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+.header{  
+  margin: 0 auto;
+  height: 581px;
+  background-image: url('image/firstpage/sonnie-hiles.png');
+}
+
+.header-nav{
+  display: flex;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-top: 4px;
+  align-items: stretch;
+}
+
+.header_logo{
+  margin-right: auto; 
+}
+
+.header_menu{
+  display: flex; 
+  justify-content: space-between;
+  width: 610px;  
+  list-style-type: none;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.header_menu>li>a{  
+  font-family: Open Sans;
+ font-style: normal;
+ font-weight: normal;
+ font-size: 18px;
+ line-height: 25px;
+}
+
+.header_menu li:hover{
+  text-decoration: underline;
+  color: #498f87;
+}
+
+.main{
+  height:  1300px;
+  max-width: 1200px;
+  margin-top:  83px;
+  
+ }
+
+ h2{  
+  height: 55px;
+  font-family: Spectral SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 55px;
+  margin: 0;  
+}
+
+ .articles-menu{
+  display: flex;
+  justify-content: space-between;
+  
+ }
+
+.dropdown { 
+   width: 203px;  
+    position: relative;
+    float: right; 
+    
+}
+
+.dropdown input, .dropdown ul {
+  display: none;
+}
+
+.dropdown label {
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+    background-color: #D7D1C9;
+    border-radius: 10px;
+    padding: 15px; 
+    justify-content: space-between;
+    font-family: Open Sans;
+    font-style: normal;
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 22px;
+}
+
+.dropdown ul {
+    position: absolute; 
+    left: 0; 
+    top: 40px; 
+    margin: 0; 
+    padding: 10px;
+    list-style: none; 
+    border-radius: 10px;
+    background-color: #D7D1C9;    
+}
+
+.dropdown a { 
+  color: #000;
+}
+
+.dropdown :checked ~ ul {
+    display: inline-block;
+}
+
+.articles-list{
+   display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-right: -15px;
+  margin-top: 60px;
+  padding: 0;
+  padding-left: 3px;   
+}
+
+.articles-item{
+  max-width: 1200px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  text-decoration:  none;  
+}
+
+.articles-description{
+  max-width: 387px;  
+}
+
+.articles-img{
+  border-radius: 10px;
+}
+
+span{
+  float: left;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+
+}
+
+time{
+  float: right;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+margin-top: 6px;
+}
+
+.noinimage>a,.noinimage>p,.noinimage>span{
+  color: #000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.inimage>a, .inimage>p {
+  color: #fff;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.inimage>time, .inimage>span{
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.noinimage>time, .noinimage>span{
+  color: rgba(46, 47, 34, 0.7);  
+}
+
+.noinimage>p,.inimage>p{
+   font-family: Open Sans;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   line-height: 28px;
+}
+
+.noinimage>a,.inimage>a{
+  font-family: Spectral SC;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.inimage{
+  position: absolute;
+  margin-top: -163px;
+  margin-left: 82px; 
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+}
+
+.button{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 224px;
+    height: 46px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;    
+    margin-top: 60px;  
+}
+
+.aboutme-title{
+ margin: 0;
+ text-align: center;
+ margin-top: 80px;
+}
+
+.aboutme-img{
+  float: left;
+  margin-right: 40px;
+}
+
+.aboutme-description{
+  white-space: pre;
+
+  
+}
+
+.aboutme-description p:nth-child(1),a{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #2E2F22;
+}
+
+.aboutme-description p:nth-child(1)>a{
+  text-decoration: underline;
+}
+.aboutme-description p:nth-child(1)>a:hover{
+  text-decoration: underline;
+}
+
+.aboutme-description p:nth-child(2){
+  white-space: pre;
+  font-family: Open Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 30px;
+line-height: 40px;
+margin-top: 10px;
+}
+
+.vertical{
+  position: relative;
+  top:-255px;
+  right: -610px;
+  border-left: 3px solid #D7D1C9;
+  height: 214px;
+}
+
+.portfolio{
+  margin-top: -120px;
+}
+
+.portolio-title{
+  margin: 0;
+ text-align: center; 
+}
+
+.portfolio-list{
+  display: flex;
+  justify-content: space-around;
+  list-style:  none;
+  margin: 0;  
+  margin-top: 50px;
+  padding: 0;     
+}
+
+.portfolio-item>img{
+  border-radius: 20px;
+}
+
+.content{
+  position: absolute;
+  margin-top: -370px; 
+  margin-left: 50px;
+  vertical-align: middle; 
+  text-align: center;
+}
+
+.content>a{
+  font-family: Spectral SC;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 30px;
+}
+
+.content>h4{
+  font-family: Spectral SC;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+white-space: pre-wrap;
+}
+
+.content>p{
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+white-space: pre-wrap;
+}
+
+.portfolio-list li:nth-child(2)>.content{
+    color:  #FFFFFF;
+}
+.portfolio-list li:nth-child(2)>.content>a{
+   color:  #FFFFFF;
+}
+
+.portfolio-button{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 224px;
+  height: 46px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;    
+  margin-top: 104px;   
+}
+
+.message-image{
+  height: 637px;
+  width: 996px;
+  background-image: url('image/firstpage/email.png');
+  margin: 0 auto;
+  margin-top: 49px;
+  border-radius: 10px; 
+}
+
+.message-title{
+  margin: 0;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.message-email{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 840px;
+font-family: Spectral SC;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+text-transform: uppercase;
+margin: 0 auto;
+margin-top: 53px;
+}
+
+.name{
+  padding-right: 20px;
+}
+
+.name,.email{
+  margin-top: 53px;
+}
+
+.textmessage{
+  margin-top: 12px;
+}
+
+.name>textarea, .email>textarea{
+  display: flex;
+  justify-content: space-around;
+  width: 400px;
+  height: 63px;
+  border-radius: 10px;
+  margin-top: 12px;  
+}
+
+.textmessage>textarea{
+  width: 837px;
+  height: 293px;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+.razmessage::placeholder{
+  padding: 20px;
+}
+
+textarea:focus::-webkit-input-placeholder {color: transparent}
+textarea:focus::-moz-placeholder          {color: transparent}
+textarea:focus:-moz-placeholder           {color: transparent}
+textarea:focus:-ms-input-placeholder      {color: transparent}
+
+.message-button{
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 224px;
+height: 46px;
+border: 1px solid #202117;
+box-sizing: border-box;
+border-radius: 10px;
+margin-top: 20px;
+background-color: inherit;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+text-transform: uppercase; 
+}
+
+.footer{
+  width: 100%;
+  height: 181px;
+  background-color: #D7D1C9;
+  margin-top: 80px;
+}
+
+.socialnetwork{
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style: none;
+  padding-top:80px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.backarticle{  
+  margin: 0 auto;
+  height: 581px;
+  background-image: url('image/secondpage/samuel-scrimshaw.png');
+}
+
+.article{
+  width: 991px;
+
+}
+.name-articles{
+  font-family: Spectral SC;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 55px;
+}
+
+.tag{
+  width: 320px;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: rgba(46, 47, 34, 0.7);
+margin-top: -30px;
+
+}
+
+.tag>time{
+  margin-top: 3px;
+}
+
+.img-articles{
+  width: 100%;
+}
+
+.text-articles{
+  margin-top: 50px;  
+  font-family: Open Sans;
+letter-spacing: 2px;
+font-weight: normal;
+font-size: 16px;
+line-height: 26px;
+color: #2E2F22;
+}
+
+ .socnetwork .like{
+  background-image: url(icon/like1.svg);
+  width: 50px;
+  height: 50px;
+  background-color: inherit;
+  border: none; 
+  margin-top: 40px;
+}
+
+
+
+.likes-number{
+  margin-left: 54px;  
+  font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 26px;
+}
+
+.network{
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin-top: -50px;
+}
+
+.network>li>a{
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+.arrow{
+  padding-left: 40px;
+}
+
+.comment{
+   width: 793px;
+}
+.comment-list{
+  width: 793px;
+  height: 493px;
+  background-color: #ECE1E1;
+  border-radius: 10px;
+  list-style: none;
+  padding-top: 18px;
+}
+
+.comment-list>li{
+  margin-top: 55px;
+  margin-left: 100px;
+}
+
+.comment-list>li>img{
+  float: left;  
+}
+
+.comment-list>li>span{
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.comment-list>li>p{
+  margin-top: 40px;
+}
+
+.comment-write{
+  margin-left: 101px;
+  position: left;
+}
+
+.name-comment{
+  padding-top: 77px;
+  font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 33px;
+padding-bottom: 69px;
+}
+
+.comment-write{
+  width: 793px;
+  height: 493px;
+}
+
+
+
+.textcomment>textarea{
+  float: right;
+  width: 406px;
+  height: 208px; 
+  margin-top: -170px;
+  border-radius: 10px;
+  margin-right: 55px;
+
+}
+
+.commentname>textarea,
+.commentemail>textarea{
+  display: flex;
+  align-items: stretch;
+  border:0px; 
+  border-bottom: 1px solid;
+  margin-bottom: 30px;
+  width: 221px;
+}
+
+.blockshift{
+  padding-right:  1500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

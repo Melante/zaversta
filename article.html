@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Портфолио</title>
+</head>
+<body>
+	<header class="header conteiner backarticle">			
+			<nav class="header-nav">
+				<div class="header_logo">
+				    <img src="icon/logo.svg">
+			    </div>			    
+			    <ul class="header_menu">
+				    <li> <a href="index.html#articles">Статьи</a></li>
+				    <li> <a href="index.html#aboutme">Обо мне</a></li>
+				    <li> <a href="index.html#portfolio">Портфолио</a></li>				
+				    <li> <a href="index.html#message">Написать мне</a></li>
+			    </ul>
+			</nav>
+	</header>
+	<main class="main conteiner">
+		<section class="article">
+			<h3 class="name-articles">Как себя мотивировать</h3>
+				<span class="tag">Теги: путешествия,друзья<time datetime="29.09.2020" >29.09.2020</time></span>
+			<p class="text-articles">
+				Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе мотивационных стимулов. Узнала я о ней из книги «Воля и самоконтроль. Как гены и мозг мешают нам бороться
+                с соблазнами» Ирины Якутенко.</p>
+
+            <p class="text-articles">
+                Согласно этой теории, человеческое поведение контролируют две системы: BAS (Behavior Activation System) и BIS (Behavior Inhibition System), каждая из них обусловлена генетически. Грей использовал её для понимания того, как вознаграждение или наказание связаны с беспокойством и импульсивностью. Самое интересное, что активность этих систем у людей различна. Зная, какая из них доминирует, можно понять, какие стимулы использовать для эффективной мотивации.</p>
+			    <span class=""img-articles""><img src="image/secondpage/estee-janssens.png">
+			    	<p>Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный стимул.</p>
+			    </span>
+			<p class="text-articles">
+				BAS (Behavior Activation System) работает на ощущение позитивных эмоций. Мотивация людей, чье поведение в основном определяется этой системой, направлена на получение вознаграждения. Они стремятся получить одобрение и награду за свои действия. Такие люди более мотивированы в учебе и развитии разных навыков. Однако носители активной BAS склонны к импульсивности и желанию
+				немедленного вознаграждения, что может мешать долгосрочной работе. BIS (Behavior Inhibition System) ответственна за избегающее поведение. Люди с этой активной системой мотивируются стремлением избежать проблем. Они более чувствительны к наказанию и новому опыту, а также стремятся избежать ситуаций, когда чувствуют, что могут потерпеть неудачу.</p>
+
+           <p class="text-articles">Определив, к какому типу относится поведение, вы узнаете, какие стимулы использовать для достижения поставленной цели. Например, я решила выучить английский — само
+                изучение не является целью, поэтому нужно правильно её сформулировать. Если моё поведение регулируется BAS, мне нужно выбрать своей конечной целью какую-то награду: например, если я выучу
+                английский, то смогу смотреть фильмы в оригинале. Если же я склонна к BIS поведению, целью нужно выбрать избежание проблем: если я заговорю на английском, то не потеряюсь в новой стране. И это 
+                можно использовать в различных сферах жизни.
+			</p>
+			<div class="socnetwork">
+				<button class="like" type="button"><span class="likes-number">16</span></button>
+				<ul class="network">
+					<li class="soc"><a href="#"><img src="icon/twitter.svg"></a></li>
+					<li class="soc"><a href="#"><img src="icon/facebook.svg"></a></li>
+					<li class="soc"><a href="#"><img src="icon/vk.svg"></a></li>
+				</ul>
+			</div>
+			<h3 class="name-articles">Ко всем статьям <a href="index.html"><img class="arrow" src="icon/arrow.svg"></a> </h3>			
+		</section>
+
+		<section class="comment">
+			<ul class="comment-list">
+				<li class="IvanPetrov">
+					<img src="image/secondpage/IvanPetrov.png"><span>Иван Петров</span><br>
+					<p>Отличная статья! Спасибо.</p>
+				</li>
+				<li class="KseniaKsenia">
+					<img src="image/secondpage/KseniaKsenia.png"><span>Ксения Ксения</span><br>
+					<p>Отличный текст, добавила в закладки.</p>
+				</li>
+				<li class="IvanIvanov">
+					<img src="image/secondpage/IvanIvanov.png"><span>Иван Иванов</span><br>
+					<p>Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
+				</li>				
+			</ul>
+						
+			<div class="comment-write">
+				<h3 class="name-comment">Оставить комментарий</h3>
+                <label class="commentname commentwrite">Имя
+           		       <textarea class="razmessage" type="name" name="name"></textarea>
+           		</label>
+           		<label class="commentemail commentwrite">Почта
+           		       <textarea class="razmessage" type="email" name="email"></textarea>
+
+           		</label>
+				<label class="textcomment commentwrite">
+           		       <textarea class="razmessage" max = "200" id = "limit" type="text-message" name="text-message" placeholder="Написать комментарий..."></textarea>		        		
+           		</label>
+           		<div class="blockshift"><button class="message-button commentbutton">Отправить</button></div>
+           		<div id="max-test"></div>
+			</div>			
+		</section>
+		<section class="footer conteiner">
+           		<ul class="socialnetwork">
+           			<li>ВК</li>
+           			<li>Телеграм</li>
+           			<li>Инстаграм</li>
+           			<li>Твиттер</li>
+           		</ul>
+         </section>	
+	</main>
+
+	<script type="text/javascript" src="like.js"></script>
+	<script type="text/javascript" src="limittext.js"></script>
+	
+
+</body>
+</html>
