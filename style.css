@@ -66,7 +66,7 @@ img {
 
 .header_menu li:hover{
   text-decoration: underline;
-  color: #498f87;
+  color: #191970;
 }
 
 .main{
@@ -618,6 +618,11 @@ padding-bottom: 69px;
 .comment-write{
   width: 793px;
   height: 493px;
+  padding-bottom: 250px;
+}
+
+.comment>.comment-write{
+  padding-bottom: 0;
 }
 
 
@@ -646,6 +651,16 @@ padding-bottom: 69px;
   padding-right:  1500px;
 }
 
+
+
+.comment-write.warning{
+  color:red;
+}
+
+.comment-write.warning .razmessage{
+  color: red;
+  border-color: #f05b29;
+}
 
 
 
